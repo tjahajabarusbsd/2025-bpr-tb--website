@@ -129,38 +129,44 @@
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide">
-                    <div class="rounded overflow-hidden">
-                        <img src="{{ url('images/dummyimg.jpg') }}" class="w-full h-64 object-cover" />
+                    <a href="/berita/detail-slug" class="block group rounded overflow-hidden">
+                        <img src="{{ url('images/dummyimg.jpg') }}" class="w-full h-64 object-cover" alt="Thumbnail Berita" />
                         <div class="py-4">
                             <p class="text-xs text-gray-400 mb-1">December 21, 2024</p>
-                            <h3 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet consectetur</h3>
+                            <h3 class="text-lg font-bold mb-1 group-hover:text-blue-600 transition-colors">
+                                Lorem ipsum dolor sit amet consectetur
+                            </h3>
                             <p class="text-gray-500 text-sm">adipisicing elit. Quos incidunt nihil atque blanditiis rem laboriosam officiis [...]</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Slide 2 -->
                 <div class="swiper-slide">
-                    <div class="rounded overflow-hidden">
-                        <img src="{{ url('images/dummyimg.jpg') }}" class="w-full h-64 object-cover" />
+                    <a href="/berita/detail-slug" class="block group rounded overflow-hidden">
+                        <img src="{{ url('images/dummyimg.jpg') }}" class="w-full h-64 object-cover" alt="Thumbnail Berita" />
                         <div class="py-4">
                             <p class="text-xs text-gray-400 mb-1">December 21, 2024</p>
-                            <h3 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet consectetur</h3>
+                            <h3 class="text-lg font-bold mb-1 group-hover:text-blue-600 transition-colors">
+                                Lorem ipsum dolor sit amet consectetur
+                            </h3>
                             <p class="text-gray-500 text-sm">adipisicing elit. Quos incidunt nihil atque blanditiis rem laboriosam officiis [...]</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Slide 3 -->
                 <div class="swiper-slide">
-                    <div class="rounded overflow-hidden">
-                        <img src="{{ url('images/dummyimg.jpg') }}" class="w-full h-64 object-cover" />
+                    <a href="/berita/detail-slug" class="block group rounded overflow-hidden">
+                        <img src="{{ url('images/dummyimg.jpg') }}" class="w-full h-64 object-cover" alt="Thumbnail Berita" />
                         <div class="py-4">
                             <p class="text-xs text-gray-400 mb-1">December 21, 2024</p>
-                            <h3 class="text-lg font-bold mb-1">Lorem ipsum dolor sit amet consectetur</h3>
+                            <h3 class="text-lg font-bold mb-1 group-hover:text-blue-600 transition-colors">
+                                Lorem ipsum dolor sit amet consectetur
+                            </h3>
                             <p class="text-gray-500 text-sm">adipisicing elit. Quos incidunt nihil atque blanditiis rem laboriosam officiis [...]</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Tambahkan slide lain sesuai kebutuhan -->

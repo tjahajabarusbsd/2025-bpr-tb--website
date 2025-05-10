@@ -95,13 +95,8 @@
                     <div class="flex gap-3 mt-4 items-center">
                         <!-- Sosmed Icons -->
                         <p class="font-semibold text-gray-700">Ikuti Sosial Media Kami</p>
-                        <a href="#" class="w-8 h-8 border rounded-full flex items-center justify-center hover:bg-blue-500 text-blue-600 hover:text-white transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                                <path d="M16.5 7.5v.01" />
-                            </svg>
+                        <a href="#" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-blue-500 text-blue-600 hover:text-white transition">
+                            <img src="{{ url('/images/instagram.png') }}" alt="">
                         </a>
                     </div>
                 </div>
@@ -109,9 +104,15 @@
                 <div class="md:w-1/3 space-y-4 text-sm">
                     <p class="font-semibold text-gray-700">Berizin dan diawasi oleh:</p>
                     <div class="flex flex-wrap items-center gap-4">
-                        <img src="{{ url('/images/ojk.png') }}" alt="Logo OJK" class="object-contain max-w-[120px]" />
-                        <img src="{{ url('/images/bi.png') }}" alt="Logo BI" class="object-contain max-w-[120px]" />
-                        <img src="{{ url('/images/lps.png') }}" alt="Logo LPS" class="object-contain max-w-[120px]" />
+                        <a href="https://www.ojk.go.id" target="_blank" rel="noopener noreferrer">
+                            <img src="{{ url('/images/ojk.png') }}" alt="Logo OJK" class="object-contain max-w-[120px]" />
+                        </a>
+                        <a href="https://www.bi.go.id" target="_blank" rel="noopener noreferrer">
+                            <img src="{{ url('/images/bi.png') }}" alt="Logo BI" class="object-contain max-w-[120px]" />
+                        </a>
+                        <a href="https://www.lps.go.id" target="_blank" rel="noopener noreferrer">
+                            <img src="{{ url('/images/lps.png') }}" alt="Logo LPS" class="object-contain max-w-[120px]" />
+                        </a>
                     </div>
                 </div>
             </div>
