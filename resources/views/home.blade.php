@@ -119,61 +119,98 @@
 
 <section id="news" class="py-20 bg-gray-100 text-black">
     <div class="container mx-auto px-4">
-        <div class="text-center mb-10">
-            <p class="text-sm uppercase text-gray-400 tracking-wide">Update Terbaru</p>
-            <h2 class="text-4xl font-extrabold">Berita & Artikel</h2>
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-10 gap-2">
+            <h2 class="text-3xl font-extrabold">Berita Terbaru</h2>
+            <!-- Tombol desktop -->
+            <a href="/berita" class="hidden md:inline-block px-5 py-2 border border-blue-600 text-blue-600 bg-white rounded-full text-sm font-medium transition hover:bg-blue-600 hover:text-white">
+                Lihat semua berita
+            </a>
         </div>
 
-        <!-- Swiper -->
-        <div class="pb-10 swiper mySwiper">
-            <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide">
-                    <a href="/berita/detail-slug" class="block group rounded overflow-hidden">
-                        <img src="{{ url('images/dummyimg.jpg') }}" class="w-full h-64 object-cover" alt="Thumbnail Berita" />
-                        <div class="py-4">
-                            <p class="text-xs text-gray-400 mb-1">December 21, 2024</p>
-                            <h3 class="text-lg font-bold mb-1 group-hover:text-blue-600 transition-colors">
-                                Lorem ipsum dolor sit amet consectetur
-                            </h3>
-                            <p class="text-gray-500 text-sm">adipisicing elit. Quos incidunt nihil atque blanditiis rem laboriosam officiis [...]</p>
-                        </div>
-                    </a>
+        <!-- Content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Artikel Utama -->
+            <a href="/berita/slug-utama" class="md:col-span-1 group block">
+                <div class="w-full h-64 md:h-80 bg-gray-300 rounded-lg overflow-hidden">
+                    <img src="{{ url('images/dummyimg.jpg') }}" class="w-full h-full object-cover group-hover:opacity-90 transition" />
                 </div>
-
-                <!-- Slide 2 -->
-                <div class="swiper-slide">
-                    <a href="/berita/detail-slug" class="block group rounded overflow-hidden">
-                        <img src="{{ url('images/dummyimg.jpg') }}" class="w-full h-64 object-cover" alt="Thumbnail Berita" />
-                        <div class="py-4">
-                            <p class="text-xs text-gray-400 mb-1">December 21, 2024</p>
-                            <h3 class="text-lg font-bold mb-1 group-hover:text-blue-600 transition-colors">
-                                Lorem ipsum dolor sit amet consectetur
-                            </h3>
-                            <p class="text-gray-500 text-sm">adipisicing elit. Quos incidunt nihil atque blanditiis rem laboriosam officiis [...]</p>
-                        </div>
-                    </a>
+                <div class="mt-4">
+                    <h3 class="text-xl font-bold group-hover:text-blue-600 transition-colors">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac elit at sem sagittis commodo.
+                    </h3>
+                    <p class="text-xs text-gray-400 mt-1">Aug 13, 2024</p>
+                    <p class="text-sm text-gray-600 mt-2 line-clamp-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac elit at sem sagittis commodo. Donec vitae
+                        hendrerit turpis. Vestibulum at dui vitae risus rutrum cursus non at erat. Maecenas vitae porttitor lorem.
+                        Curabitur finibus magna ut tincidunt vehicula.
+                    </p>
                 </div>
+            </a>
 
-                <!-- Slide 3 -->
-                <div class="swiper-slide">
-                    <a href="/berita/detail-slug" class="block group rounded overflow-hidden">
-                        <img src="{{ url('images/dummyimg.jpg') }}" class="w-full h-64 object-cover" alt="Thumbnail Berita" />
-                        <div class="py-4">
-                            <p class="text-xs text-gray-400 mb-1">December 21, 2024</p>
-                            <h3 class="text-lg font-bold mb-1 group-hover:text-blue-600 transition-colors">
-                                Lorem ipsum dolor sit amet consectetur
-                            </h3>
-                            <p class="text-gray-500 text-sm">adipisicing elit. Quos incidunt nihil atque blanditiis rem laboriosam officiis [...]</p>
-                        </div>
-                    </a>
-                </div>
+            <!-- Artikel Kecil -->
+            <div class="flex flex-col space-y-4">
+                <!-- Item 1 -->
+                <a href="/berita/slug-1" class="flex items-start gap-4 group">
+                    <div class="w-50 h-40 bg-gray-300 rounded-lg overflow-hidden shrink-0">
+                        <img src="{{ url('images/dummyimg.jpg') }}" class="w-full h-full object-cover group-hover:opacity-90 transition" />
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-sm font-medium line-clamp-3 md:text-md md:font-bold group-hover:text-blue-600 transition-colors">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac elit at sem sagittis commodo.
+                        </h4>
+                        <p class="text-sm text-gray-600 mt-2 line-clamp-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac elit at sem sagittis commodo. Donec vitae
+                            hendrerit turpis. Vestibulum at dui vitae risus rutrum cursus non at erat. Maecenas vitae porttitor lorem.
+                            Curabitur finibus magna ut tincidunt vehicula.
+                        </p>
+                        <p class="text-xs text-gray-400 mt-1">Aug 6, 2024</p>
+                    </div>
+                </a>
 
-                <!-- Tambahkan slide lain sesuai kebutuhan -->
+                <!-- Item 2 -->
+                <a href="/berita/slug-2" class="flex items-start gap-4 group">
+                    <div class="w-50 h-40 bg-gray-300 rounded-lg overflow-hidden shrink-0">
+                        <img src="{{ url('images/dummyimg.jpg') }}" class="w-full h-full object-cover group-hover:opacity-90 transition" />
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-sm font-medium line-clamp-3 md:text-md md:font-bold group-hover:text-blue-600 transition-colors">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac elit at sem sagittis commodo.
+                        </h4>
+                        <p class="text-sm text-gray-600 mt-2 line-clamp-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac elit at sem sagittis commodo. Donec vitae
+                            hendrerit turpis. Vestibulum at dui vitae risus rutrum cursus non at erat. Maecenas vitae porttitor lorem.
+                            Curabitur finibus magna ut tincidunt vehicula.
+                        </p>
+                        <p class="text-xs text-gray-400 mt-1">Aug 6, 2024</p>
+                    </div>
+                </a>
+
+                <!-- Item 3 -->
+                <a href="/berita/slug-3" class="flex items-start gap-4 group">
+                    <div class="w-50 h-40 bg-gray-300 rounded-lg overflow-hidden shrink-0">
+                        <img src="{{ url('images/dummyimg.jpg') }}" class="w-full h-full object-cover group-hover:opacity-90 transition" />
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="text-sm font-medium line-clamp-3 md:text-md md:font-bold group-hover:text-blue-600 transition-colors">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac elit at sem sagittis commodo.
+                        </h4>
+                        <p class="text-sm text-gray-600 mt-2 line-clamp-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac elit at sem sagittis commodo. Donec vitae
+                            hendrerit turpis. Vestibulum at dui vitae risus rutrum cursus non at erat. Maecenas vitae porttitor lorem.
+                            Curabitur finibus magna ut tincidunt vehicula.
+                        </p>
+                        <p class="text-xs text-gray-400 mt-1">Aug 6, 2024</p>
+                    </div>
+                </a>
             </div>
+        </div>
 
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
+        <!-- Tombol mobile -->
+        <div class="mt-8 text-center md:hidden">
+            <a href="/berita" class="px-5 py-2 border border-blue-600 text-blue-600 bg-white rounded-full text-sm font-medium transition hover:bg-blue-600 hover:text-white">
+                Lihat semua berita
+            </a>
         </div>
     </div>
 </section>
