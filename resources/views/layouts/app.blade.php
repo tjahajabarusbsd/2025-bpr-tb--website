@@ -4,38 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'My App')</title>
+    <meta name="description" content="BPR Tjahaja Baru - Bank Perekonomian Rakyat">
+    <meta name="keywords" content="BPR, Bank, Tjahaja Baru, Perekonomian, Rakyat, Tabungan, Kredit, Deposit, Bank BPR Tjahaja Baru Padang">
+    <meta name="author" content="BPR Tjahaja Baru">
+    <title>@yield('title', 'BPR Tjahaja Baru')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @yield('additional_css')
+    <style>
+        figcaption {
+            display: none;
+        }
+    </style>
 </head>
 
 <body class="min-h-screen flex flex-col font-sans antialiased">
-    <header class="bg-white shadow" x-data="{ mobileMenuOpen: false, productMenuOpen: false }">
+    <header
+        class="shadow bg-white"
+        x-data="{ 
+            mobileMenuOpen: false, 
+            productMenuOpen: false, 
+            tentangMenuOpen: false,
+        }">
         <nav class="container mx-auto p-4 flex items-center justify-between">
-            <div class="flex items-center">
-                <img src="{{ url('/images/logo.png') }}" alt="Logo" class="h-10">
-                <span class="text-blue-800 font-bold text-2xl">BPR TJAHAJA BARU</span>
-            </div>
+            <a href="/" class="flex items-center space-x-4">
+                <img src="{{ url('/images/logo.png') }}" alt="Logo" class="h-12 w-auto">
+                <div class="leading-tight">
+                    <div class="text-[10px] font-semibold uppercase text-gray-700 tracking-wide">pt. bank perekonomian rakyat</div>
+                    <div class="text-xl font-bold uppercase text-gray-900">tjahaja baru</div>
+                </div>
+            </a>
 
             <ul class="hidden md:flex space-x-4 items-center">
-                <li><a href="/" class="text-gray-700 hover:text-blue-500">Home</a></li>
-                <li><a href="/about" class="text-gray-700 hover:text-blue-500">Tentang BPR</a></li>
+                <li><a href="/" class="text-gray-700 font-bold hover:text-blue-500">Home</a></li>
                 <li
-                    @mouseenter="clearTimeout($store.hoverDelay); productMenuOpen = true"
-                    @mouseleave="$store.hoverDelay = setTimeout(() => productMenuOpen = false, 200)"
+                    @mouseenter="tentangMenuOpen = true"
+                    @mouseleave="tentangMenuOpen = false"
                     class="relative">
-                    <button class="text-gray-700 hover:text-blue-500 flex items-center">
+                    <button class="text-gray-700 font-bold hover:text-blue-500 flex items-center">
+                        Tentang Kami
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <ul x-show="tentangMenuOpen" x-transition class="absolute font-bold bg-white shadow rounded top-full left-0 py-2 w-40 z-10">
+                        <li><a href="/profil" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Profil Perusahaan</a></li>
+                        <li><a href="/manajemen" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Manajemen & Struktur Perusahaan</a></li>
+                    </ul>
+                </li>
+                <li
+                    @mouseenter="productMenuOpen = true"
+                    @mouseleave="productMenuOpen = false"
+                    class="relative">
+                    <button class="text-gray-700 font-bold hover:text-blue-500 flex items-center">
                         Product
                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </button>
-                    <ul x-show="productMenuOpen" x-transition class="absolute bg-white shadow rounded top-full left-0 py-2 w-40 z-10">
+                    <ul x-show="productMenuOpen" x-transition class="absolute font-bold bg-white shadow rounded top-full left-0 py-2 w-40 z-10">
                         <li><a href="/tabungan" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Tabungan</a></li>
                         <li><a href="/deposit" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Deposit</a></li>
                         <li><a href="/kredit" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Kredit</a></li>
                     </ul>
                 </li>
+                <li><a href="/post" class="text-gray-700 font-bold hover:text-blue-500">Informasi</a></li>
             </ul>
 
             <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden text-gray-700 focus:outline-none">
@@ -48,23 +80,35 @@
             </button>
         </nav>
 
-        <div x-show="mobileMenuOpen" x-transition class="md:hidden bg-white shadow px-4 pb-4">
+        <div x-show="mobileMenuOpen" x-transition class="md:hidden bg-white shadow px-4 pb-4 pattern">
             <ul class="space-y-2">
-                <li><a href="/" class="block text-gray-700 hover:text-blue-500 py-2">Home</a></li>
-                <li><a href="/about" class="block text-gray-700 hover:text-blue-500 py-2">Tentang BPR</a></li>
+                <li><a href="/" class="block font-bold text-gray-700 hover:text-blue-500 py-2">Home</a></li>
                 <li x-data="{ open: false }">
-                    <button @click="open = !open" class="w-full flex justify-between items-center text-gray-700 hover:text-blue-500 py-2">
+                    <button @click="open = !open" class="w-full flex justify-between items-center font-bold text-gray-700 hover:text-blue-500 py-2">
+                        Tentang Kami
+                        <svg class="w-4 h-4 ml-1 transform" :class="{'rotate-180': open}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <ul x-show="open" x-transition class="font-bold pl-4 mt-1 space-y-1">
+                        <li><a href="/profil" class="block text-gray-600 hover:text-blue-500">Profil Perusahaan</a></li>
+                        <li><a href="/manajemen" class="block text-gray-600 hover:text-blue-500">Manajemen & Struktur Perusahaan</a></li>
+                    </ul>
+                </li>
+                <li x-data="{ open: false }">
+                    <button @click="open = !open" class="w-full flex justify-between items-center font-bold text-gray-700 hover:text-blue-500 py-2">
                         Product
                         <svg class="w-4 h-4 ml-1 transform" :class="{'rotate-180': open}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </button>
-                    <ul x-show="open" x-transition class="pl-4 mt-1 space-y-1">
+                    <ul x-show="open" x-transition class="font-bold pl-4 mt-1 space-y-1">
                         <li><a href="/tabungan" class="block text-gray-600 hover:text-blue-500">Tabungan</a></li>
                         <li><a href="/deposit" class="block text-gray-600 hover:text-blue-500">Deposit</a></li>
                         <li><a href="/kredit" class="block text-gray-600 hover:text-blue-500">Kredit</a></li>
                     </ul>
                 </li>
+                <li><a href="/post" class="text-gray-700 font-bold hover:text-blue-500">Informasi</a></li>
             </ul>
         </div>
     </header>
@@ -73,7 +117,7 @@
         @yield('content')
     </main>
 
-    <footer class="text-gray-800 pt-10">
+    <footer class="text-gray-800 pt-10 border-t border-gray-300">
         <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between gap-8 pb-6">
 
             <div class="md:w-2/3 space-y-4">
@@ -97,7 +141,6 @@
                 </div>
 
                 <div class="flex gap-3 mt-4 items-center">
-                    <!-- Sosmed Icons -->
                     <p class="font-semibold text-gray-700">Ikuti Sosial Media Kami</p>
                     <a href="#" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-blue-500 text-blue-600 hover:text-white transition">
                         <img src="{{ url('/images/instagram.png') }}" alt="">
@@ -125,7 +168,6 @@
             &copy; 2025 BPR Tjahaja Baru. All rights reserved.
         </div>
     </footer>
-
     @yield('additional_script')
 </body>
 
