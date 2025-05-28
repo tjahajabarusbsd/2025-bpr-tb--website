@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="BPR Tjahaja Baru - Bank Perekonomian Rakyat">
-    <meta name="keywords" content="BPR, Bank, Tjahaja Baru, Perekonomian, Rakyat, Tabungan, Kredit, Deposit, Bank BPR Tjahaja Baru Padang">
+    <meta name="keywords" content="BPR, Bank, Tjahaja Baru, Perekonomian, Rakyat, Tabungan, Kredit, Deposito, Bank BPR Tjahaja Baru Padang">
     <meta name="author" content="BPR Tjahaja Baru">
     <title>@yield('title', 'BPR Tjahaja Baru')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -63,7 +63,7 @@
                     </button>
                     <ul x-show="productMenuOpen" x-transition class="absolute font-bold bg-white shadow rounded top-full left-0 py-2 w-40 z-10">
                         <li><a href="/tabungan" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Tabungan</a></li>
-                        <li><a href="/deposit" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Deposit</a></li>
+                        <li><a href="/deposito" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Deposito</a></li>
                         <li><a href="/kredit" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Kredit</a></li>
                     </ul>
                 </li>
@@ -104,7 +104,7 @@
                     </button>
                     <ul x-show="open" x-transition class="font-bold pl-4 mt-1 space-y-1">
                         <li><a href="/tabungan" class="block text-gray-600 hover:text-blue-500">Tabungan</a></li>
-                        <li><a href="/deposit" class="block text-gray-600 hover:text-blue-500">Deposit</a></li>
+                        <li><a href="/deposito" class="block text-gray-600 hover:text-blue-500">Deposito</a></li>
                         <li><a href="/kredit" class="block text-gray-600 hover:text-blue-500">Kredit</a></li>
                     </ul>
                 </li>
