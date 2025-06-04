@@ -9,6 +9,21 @@
         <p class="text-lg">Fasilitas pinjaman cepat dan terpercaya untuk kebutuhan Anda</p>
     </div>
 
+    <div class="pb-8">
+        <div class="max-w-md rounded-lg overflow-hidden shadow-lg">
+            <video 
+                src="{{ url('/videos/kredit.mp4') }}" 
+                autoplay 
+                muted 
+                loop 
+                playsinline 
+                controls 
+                class="w-full h-auto">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
     <div class="mb-8">
         <h1 class="text-3xl font-bold">FASILITAS KREDIT YANG DIBERIKAN:</h1>
     </div>
