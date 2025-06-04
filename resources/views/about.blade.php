@@ -6,7 +6,19 @@
 <section class="relative bg-blue-900 text-white py-16">
     <div class="container mx-auto px-4 text-center">
         <h1 class="text-4xl font-bold mb-4">Tentang BPR TJAHAJA BARU</h1>
-        <p class="text-xl">Mitra Finansial Terpercaya untuk Masa Depan Anda</p>
+        <p class="text-xl mb-8">Mitra Finansial Terpercaya untuk Masa Depan Anda</p>
+        <div class="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
+            <video 
+                src="{{ url('/videos/bprtb-video.mp4') }}" 
+                autoplay 
+                muted 
+                loop 
+                playsinline 
+                controls 
+                class="w-full h-auto">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
 </section>
 
