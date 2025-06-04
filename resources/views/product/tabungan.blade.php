@@ -9,6 +9,21 @@
         <p class="text-lg">Investasi aman, nyaman dan menguntungkan</p>
     </div>
 
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-white rounded-xl shadow p-6 relative group">
+            <img src="{{ url('/images/tabungan_depan.png') }}" alt="Tabungan Tampak Depan" class="w-full h-auto rounded-lg">
+            <div class="absolute bottom-2 left-2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                Tabungan Tampak Depan
+            </div>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 relative group">
+            <img src="{{ url('/images/tabungan_belakang.png') }}" alt="Tabungan Tampak Belakang" class="w-full h-auto rounded-lg">
+            <div class="absolute bottom-2 left-2 bg-gray-800 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                Tabungan Tampak Belakang
+            </div>
+        </div>
+    </div>
+
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="bg-white rounded-xl shadow p-6">
             <h2 class="text-xl font-semibold mb-4">Fitur Tabungan</h2>
