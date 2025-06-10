@@ -122,7 +122,7 @@
     <div class="container mx-auto px-4 text-center">
         <h2 class="text-2xl font-bold mb-4">Siap Mewujudkan Tujuan Finansial Anda?</h2>
         <p class="mb-6">Bergabunglah bersama BPR Tjahaja Baru dan nikmati kemudahan layanan keuangan kami.</p>
-        <a href="/kontak" class="bg-white text-blue-900 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">Hubungi Kami</a>
+        <a href="tel:+6275127333" class="bg-white text-blue-900 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">Hubungi Kami</a>
     </div>
 </section>
 @endsection
