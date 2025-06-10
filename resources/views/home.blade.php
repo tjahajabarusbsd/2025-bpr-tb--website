@@ -25,9 +25,11 @@
             </h2>
             <img src="{{ url('/images/staffs.jpg') }}" alt="Gedung Bank" class="rounded-lg w-full object-cover shadow mb-6" />
             <p class="text-gray-600 text-base leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac elit at sem sagittis commodo. Donec vitae
-                hendrerit turpis. Vestibulum at dui vitae risus rutrum cursus non at erat. Maecenas vitae porttitor lorem.
-                Curabitur finibus magna ut tincidunt vehicula.
+                PT. Bank Perekonomian Rakyat Tjahaja Baru berawal dari akuisisi BPR LPN Magek pada Januari 2008, 
+                diikuti pemindahan kantor ke Padang pada tahun yang sama. Perubahan bentuk badan hukum dan nama 
+                disetujui OJK pada 2019. Terbaru, pada Desember 2024, perusahaan resmi berganti nama menjadi 
+                PT. Bank Perekonomian Rakyat Tjahaja Baru. 
+                <a href="/profil" class="text-blue-700 underline hover:text-blue-900 ml-1">Lihat selengkapnya</a>
             </p>
         </div>
 
