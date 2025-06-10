@@ -8,6 +8,7 @@
     <meta name="keywords" content="BPR, Bank, Tjahaja Baru, Perekonomian, Rakyat, Tabungan, Kredit, Deposito, Bank BPR Tjahaja Baru Padang">
     <meta name="author" content="BPR Tjahaja Baru">
     <title>@yield('title', 'BPR Tjahaja Baru')</title>
+    @yield('meta')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @yield('additional_css')
     <style>
@@ -19,7 +20,7 @@
 
 <body class="min-h-screen flex flex-col font-sans antialiased">
     <header
-        class="shadow bg-white"
+        class="shadow bg-white z-1"
         x-data="{ 
             mobileMenuOpen: false, 
             productMenuOpen: false, 

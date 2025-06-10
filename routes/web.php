@@ -18,5 +18,13 @@ Route::get('/tabungan', function () {
     return view('product/tabungan');
 });
 
+Route::get('/deposito', function () {
+    return view('product/deposito');
+});
+
+Route::get('/kredit', function () {
+    return view('product/kredit');
+});
+
 Route::get('/post', [PostController::class, 'index'])->name('post.index');
 Route::get('/post/{slug}', [PostController::class, 'show'])->name('post.show');
