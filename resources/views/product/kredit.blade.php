@@ -63,6 +63,18 @@
                         <span class="text-gray-800">0896-5308-3783</span>
                     </a>
                 </div>
+                <div class="flex items-center space-x-2 mt-1">
+                    <a class="btn-wa flex items-center space-x-2"
+                        href="https://api.whatsapp.com/send?phone=6282285003336&amp;text=Halo admin, saya ingin menanyakan"
+                        target="_blank" rel="noopener noreferrer">
+                        
+                        <div class="bg-[#25D366] p-1.5 rounded-full">
+                            <img src="{{ url('/images/wa.png') }}" alt="WhatsApp" class="w-4 h-4">
+                        </div>
+                        
+                        <span class="text-gray-800">0822-8500-3336</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

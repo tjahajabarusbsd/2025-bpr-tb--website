@@ -20,18 +20,18 @@
 
 <body class="min-h-screen flex flex-col font-sans antialiased">
     <header
-        class="shadow bg-white z-1"
+        class="shadow z-1"
         x-data="{ 
             mobileMenuOpen: false, 
             productMenuOpen: false, 
             tentangMenuOpen: false,
         }">
-        <nav class="container mx-auto p-4 flex items-center justify-between">
+        <nav class="container mx-auto p-4 flex items-center justify-between bg-white">
             <a href="/" class="flex items-center space-x-4">
                 <img src="{{ url('/images/logo.png') }}" alt="Logo" class="h-12 w-auto">
                 <div class="leading-tight">
                     <div class="text-[10px] font-semibold uppercase text-[#223E91] tracking-wide">pt. bank perekonomian rakyat</div>
-                    <div class="text-xl font-bold uppercase text-[#223E91]">tjahaja baru</div>
+                    <div class="text-[23px] font-bold uppercase text-[#223E91]">tjahaja baru</div>
                 </div>
             </a>
 

@@ -40,6 +40,7 @@
             <h2 class="text-xl font-semibold mb-4">Syarat dan Ketentuan</h2>
             <ul class="list-disc list-inside space-y-2 text-gray-700">
                 <li>Fotokopi KTP</li>
+                <li>Foto copy KK</li>
                 <li>Mengisi aplikasi pembukaan rekening</li>
                 <li>Penarikan & penyetoran dapat dilakukan setiap hari di jam kerja</li>
             </ul>
