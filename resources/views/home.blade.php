@@ -115,10 +115,7 @@
                     </h3>
                     <p class="text-xs text-gray-400 mt-1">{{ $mainPost->created_at->format('M d, Y') }}</p>
                     <p class="text-sm text-gray-600 mt-2 line-clamp-2">
-                        <?php /* {{ $mainPost->excerpt ?? \Str::limit(strip_tags($mainPost->content), 150) }} */ ?>
-                        {{-- Menggunakan strip_tags untuk menghilangkan tag HTML --}}
-                        {{-- Menggunakan \Str::limit untuk membatasi jumlah karakter --}}
-                        {{ strip_tags($mainPost->content) }}
+                        {!! Str::limit(strip_tags(preg_replace('/<figcaption[^>]*>.*?<\/figcaption>/is', '', $mainPost->content)), 200) !!}
                     </p>
                 </div>
             </a>
@@ -139,7 +136,7 @@
                             {{ $post->title }}
                         </h4>
                         <p class="text-sm text-gray-600 mt-2 line-clamp-3">
-                            {{ strip_tags($post->content) }}
+                        {!! Str::limit(strip_tags(preg_replace('/<figcaption[^>]*>.*?<\/figcaption>/is', '', $post->content)), 200) !!}
                         </p>
                         <p class="text-xs text-gray-400 mt-1">{{ $post->created_at->format('M d, Y') }}</p>
                     </div>
@@ -158,23 +155,4 @@
 @endsection
 
 @section('additional_script')
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 2,
-            },
-            1024: {
-                slidesPerView: 3,
-            },
-        },
-    });
-</script>
 @endsection

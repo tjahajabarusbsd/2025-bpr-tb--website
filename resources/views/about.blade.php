@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Tentang BPR TJAHAJA BARU')
+@section('title', 'BPR Tjahaja Baru | Profil')
 
 @section('content')
 <section class="relative bg-blue-900 text-white py-16">

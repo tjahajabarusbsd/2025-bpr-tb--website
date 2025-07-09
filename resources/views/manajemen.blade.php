@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Manajemen & Struktur Perusahaan')
+@section('title', 'BPR Tjahaja Baru | Manajemen & Struktur Perusahaan')
 
 @section('content')
 <section class="py-12">

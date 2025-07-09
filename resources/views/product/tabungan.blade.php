@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Tabungan')
+@section('title', 'BPR Tjahaja Baru | Tabungan')
 
 @section('content')
 <div class="max-w-6xl mx-auto px-4 py-8">

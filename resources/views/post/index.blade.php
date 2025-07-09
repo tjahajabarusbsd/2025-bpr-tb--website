@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Informasi')
+@section('title', 'BPR Tjahaja Baru | Informasi')
 
 @section('content')
 <div class="container mx-auto py-8 px-4">
@@ -21,7 +21,7 @@
                         {{ $post->title }}
                     </h4>
                     <p class="text-sm text-gray-600 line-clamp-3 mb-3">
-                        {{ Str::limit(strip_tags($post->content), 120) }}
+                        {!! Str::limit(strip_tags(preg_replace('/<figcaption[^>]*>.*?<\/figcaption>/is', '', $post->content)), 200) !!}
                     </p>
                     <p class="text-xs text-gray-400">{{ $post->created_at->format('M d, Y') }}</p>
                 </div>
