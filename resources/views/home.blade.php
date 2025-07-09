@@ -12,7 +12,7 @@
 
 @section('content')
 <section id="hero" class="bg-white">
-    <img src="{{ url('/images/banner.png') }}" alt="Home Banner" class="w-full max-w-[1280px] mx-auto" />
+    <img src="{{ url('/images/banner.jpg') }}" alt="Home Banner" class="w-full max-w-[1280px] mx-auto" />
 </section>
 
 <section class="pt-16">
@@ -23,7 +23,7 @@
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Profil Singkat</h2>
         <h3 class="text-2xl font-bold text-blue-800 mb-4">Tentang BPR Tjahaja Baru</h3>
         <p class="text-gray-700 leading-relaxed">
-        PT. Bank Perekonomian Rakyat Tjahaja Baru berawal dari akuisisi BPR LPN Magek pada Januari 2018, 
+        PT. BPR (Bank Perkreditan Rakyat) Tjahaja Baru berawal dari akuisisi BPR LPN Magek pada Januari 2018, 
         diikuti pemindahan kantor ke Padang pada tahun yang sama. Perubahan bentuk badan hukum dan nama 
         disetujui OJK pada 2019. Terbaru, pada Desember 2024, perusahaan resmi berganti nama menjadi 
         PT. Bank Perekonomian Rakyat Tjahaja Baru. 

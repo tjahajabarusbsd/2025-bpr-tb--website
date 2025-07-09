@@ -127,7 +127,7 @@
             <p class="text-sm text-gray-500">Published on {{ $post->created_at->format('F d, Y') }}</p>
         </header>
         <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-            {!! str($post->content)->sanitizeHtml()->replace('src="/storage/', 'src="' . asset('storage/') . '/') !!}
+            {!! str($post->content)->sanitizeHtml()->replace('src="storage/', 'src="' . url('storage/') . '/') !!}
         </div>
     </article>
 </div>
