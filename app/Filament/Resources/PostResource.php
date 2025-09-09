@@ -27,7 +27,7 @@ class PostResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->required()
                     ->maxLength(255)
-                    ->reactive()
+                    ->debounce(500) // tunggu 0.5 detik setelah user berhenti mengetik
                     ->afterStateUpdated(function (string $state, callable $set) {
                         $set('slug', \Str::slug($state));
                     }),
