@@ -20,6 +20,12 @@ class Post extends Model
         'is_published' => 'boolean',
     ];
 
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+
     /**
      * Boot the model and define a creating event to automatically generate a slug
      * from the title if no slug is provided.
