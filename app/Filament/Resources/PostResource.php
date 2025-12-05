@@ -35,6 +35,10 @@ class PostResource extends Resource
                     ->disabled()
                     ->required()
                     ->maxLength(255),
+                Forms\Components\Select::make('category_id')
+                    ->label('Category')
+                    ->relationship('category', 'name')
+                    ->required(),
                 Forms\Components\RichEditor::make('content')
                     ->required()
                     ->fileAttachmentsVisibility('public')
@@ -51,6 +55,8 @@ class PostResource extends Resource
                 Tables\Columns\TextColumn::make('title')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('slug')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('category.name')
                     ->searchable(),
                 Tables\Columns\IconColumn::make('is_published')
                     ->boolean(),
