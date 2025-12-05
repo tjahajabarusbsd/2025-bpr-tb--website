@@ -12,11 +12,11 @@
     @yield('meta')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @yield('additional_css')
-    <style>
+    <!-- <style>
         figcaption {
             display: none;
         }
-    </style>
+    </style> -->
 </head>
 
 <body class="min-h-screen flex flex-col font-sans antialiased">
