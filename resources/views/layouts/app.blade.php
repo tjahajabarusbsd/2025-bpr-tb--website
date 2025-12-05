@@ -83,7 +83,7 @@
                                 Tahunan</a>
                         </li>
                         <li><a href="/informasi/laporan-keuangan-publikasi"
-                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Laporan Keungan Publikasi</a>
+                                class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Laporan Keuangan Publikasi</a>
                         </li>
                         <li><a href="/informasi/laporan-literasi-dan-edukasi-keuangan"
                                 class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Laporan Literasi dan Edukasi
@@ -151,7 +151,7 @@
                         <li><a href="/informasi/laporan-tahunan" class="block text-gray-600 hover:text-blue-500">Laporan
                                 Tahunan</a></li>
                         <li><a href="/informasi/laporan-keuangan-publikasi"
-                                class="block text-gray-600 hover:text-blue-500">Laporan Keungan Publikasi</a></li>
+                                class="block text-gray-600 hover:text-blue-500">Laporan Keuangan Publikasi</a></li>
                         <li><a href="/informasi/laporan-literasi-dan-edukasi-keuangan"
                                 class="block text-gray-600 hover:text-blue-500">Laporan Literasi dan Edukasi
                                 Keuangan</a></li>
