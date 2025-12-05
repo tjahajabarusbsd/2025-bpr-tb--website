@@ -26,5 +26,6 @@ Route::get('/kredit', function () {
     return view('product/kredit');
 });
 
-Route::get('/post', [PostController::class, 'index'])->name('post.index');
-Route::get('/post/{slug}', [PostController::class, 'show'])->name('post.show');
+Route::get('/informasi', [PostController::class, 'index'])->name('post.index');
+Route::get('/informasi/{category}', [PostController::class, 'category'])->name('category.posts');
+Route::get('/informasi/{category}/{post}', [PostController::class, 'show'])->name('post.show');
