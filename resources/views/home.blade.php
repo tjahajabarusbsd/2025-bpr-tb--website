@@ -82,6 +82,59 @@
         </div>
     </section>
 
+    <section id="promo" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Promo Terbaru</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Beragam program dan promo menarik dari BPR Tjahaja Baru untuk mendukung masa depan Anda.
+                </p>
+            </div>
+
+            <!-- Grid Promo -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+
+                <!-- Promo Item -->
+                <div class="min-w-full sm:min-w-[50%] md:min-w-[33.333%] lg:min-w-[20%] px-3">
+                    <div
+                        class="bg-white rounded-xl shadow hover:shadow-md hover:scale-[1.03] transition duration-300 overflow-hidden">
+                        <img src="{{ url('/images/promo-1.jpg') }}" class="w-full aspect-[5/7] object-cover" alt="Promo 1">
+                    </div>
+                </div>
+
+                <div class="min-w-full sm:min-w-[50%] md:min-w-[33.333%] lg:min-w-[20%] px-3">
+                    <div
+                        class="bg-white rounded-xl shadow hover:shadow-md hover:scale-[1.03] transition duration-300 overflow-hidden">
+                        <img src="{{ url('/images/promo-2.jpg') }}" class="w-full aspect-[5/7] object-cover" alt="Promo 2">
+                    </div>
+                </div>
+
+                <div class="min-w-full sm:min-w-[50%] md:min-w-[33.333%] lg:min-w-[20%] px-3">
+                    <div
+                        class="bg-white rounded-xl shadow hover:shadow-md hover:scale-[1.03] transition duration-300 overflow-hidden">
+                        <img src="{{ url('/images/promo-3.jpg') }}" class="w-full aspect-[5/7] object-cover" alt="Promo 3">
+                    </div>
+                </div>
+
+                <div class="min-w-full sm:min-w-[50%] md:min-w-[33.333%] lg:min-w-[20%] px-3">
+                    <div
+                        class="bg-white rounded-xl shadow hover:shadow-md hover:scale-[1.03] transition duration-300 overflow-hidden">
+                        <img src="{{ url('/images/promo-4.jpg') }}" class="w-full aspect-[5/7] object-cover" alt="Promo 4">
+                    </div>
+                </div>
+
+                <div class="min-w-full sm:min-w-[50%] md:min-w-[33.333%] lg:min-w-[20%] px-3">
+                    <div
+                        class="bg-white rounded-xl shadow hover:shadow-md hover:scale-[1.03] transition duration-300 overflow-hidden">
+                        <img src="{{ url('/images/promo-5.jpg') }}" class="w-full aspect-[5/7] object-cover" alt="Promo 5">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     @php
         $mainPost = $posts->first();
         $otherPosts = $posts->skip(1);
